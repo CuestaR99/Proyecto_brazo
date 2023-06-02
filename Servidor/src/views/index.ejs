@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+<head>    
+    <title>Brazo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/estilos.css"/>
+    <script src="http://192.168.43.91:5000/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <header id="titulo">
+        <h1> Sistema de clasificación </h1>
+        <h2 id="estadoBrazo"> Brazo en preparación </h2>
+    </header>
+    <main>
+        <div class="container">
+            <article class="articulo">
+                <h2 class="subtitulos"> Inventario </h2>
+                <p> Productos que han llegado</p>
+                <img src="img/cubos.png" width="150" height="150">
+                <p id="Inventario"> Aca irá el total de cajas para distribuir</p>
+                <div class="Caja">
+                    <div class="containerBoton">
+                        <input type="number" id="text" name="Caja" disabled>
+                        <input type="submit" id="boton" value="Enviar" name="Enviar" onclick="EnviarInventario()"disabled> 
+                    </div>                     
+                    
+                </div>
+                
+            </article>
+        </div>
+        <section class="flex-container">
+            <div class="contenedor">
+                <div id="Rojas" class="articulo">
+                    <h2 class="subtitulos"> Rojo</h2>
+                    <p> Producto o colores referentes</p>
+                    <img src="img/rojo.png" width="150" height="150">
+                    <p id="CajasRojas"> Contador de cuantas cajas de este color van</p>
+                </div>
+    
+                <div id="Azules" class="articulo">
+                    <h2 class="subtitulos"> Azul</h2>
+                    <p>Productos o colores referentes</p>
+                    <img src="img/azul.png" width="150" height="150">
+                    <p id="CajasAzules"> Contador de cuantas cajas de este color van</p>
+                </div>
+    
+                <div id="Verdes" class="articulo">
+                    <h2 class="subtitulos"> Verde</h2>
+                    <p>Productos o colores referentes</p>
+                    <img src="img/verde.png" width="150" height="150">
+                    <p id="CajasVerdes"> Contador de cuantas cajas de este color van</p>
+                </div>
+            </div>   
+            
+        </section>
+    </main>
+    <footer>
+        <section>
+            <a href="#titulo"> Ir Arriba</a>
+        </section>
+        <p> Contador de Cajas Copyright ©</p>
+    </footer>
+    <script src="Js/Codigo.js"></script>
+</body>
+</html>
